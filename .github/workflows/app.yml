@@ -1,0 +1,36 @@
+name: Python + Flask Application
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Проверить код из репозитория
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Убедиться, что у скрипта есть нужные права
+      - name: Grant execute permissions to the script
+        run: chmod +x ./st.sh
+
+      # Установить Python
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.9
+
+      # Установить зависимости
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      # Запуск тестов или скриптов
+      - name: Run script
+        run: ./st.sh
