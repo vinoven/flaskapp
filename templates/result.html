@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+    <title>Результаты обработки изображения</title>
+</head>
+<body>
+    <div align="center">
+        <h1>Результаты обработки изображения</h1>
+        <table>
+            <tr>
+                <!-- Исходное изображение -->
+                <td>
+                    <h3>Исходное изображение</h3>
+                    <a href="{{ img }}" target="_blank">
+                        <img src="{{ img }}" width="400" alt="Исходное изображение">
+                    </a>
+                </td>
+                <!-- Обработанное изображение -->
+                <td>
+                    <h3>Новое изображение</h3>
+                    <a href="{{ img_done }}" target="_blank">
+                        <img src="{{ img_done }}" width="400" alt="Обработанное изображение">
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <!-- График распределения цветов исходного изображения -->
+                <td>
+                    <h3>График распределения цветов исходного изображения</h3>
+                    <a href="{{ img_plot }}" target="_blank">
+                        <img src="{{ img_plot }}" width="400" alt="График исходного изображения">
+                    </a>
+                </td>
+                <!-- График распределения цветов обработанного изображения -->
+                <td>
+                    <h3>График распределения цветов нового изображения</h3>
+                    <a href="{{ img_done_plot }}" target="_blank">
+                        <img src="{{ img_done_plot }}" width="400" alt="График обработанного изображения">
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+h1 {
+	font-size: 32px;
+	font-weight: bold;
+}
+
+
+h2 {
+	font-size: 28px;
+	font-weight: bold;
+}
+
+
+p {
+	font-size: 20px;
+	text-indent: 1.5em;
+	text-align: justify;
+}
+
+
+a {
+    font-size: 24px;
+}
+
+
+table {
+	margin: auto;
+	border: 5px solid black;
+}
+
+
+td {
+	border: 5px solid black;
+
+	text-align: center;
+	vertical-align: center;
+}
+
+
+form {
+  position: center;
+
+  width  : 1000px;
+  margin : 0px auto;
+
+  background: #FFF;
+}
+
+
+label, input {
+	font-weight: bold;
+    font-size: 20px;
+}
+
+
+#choice_axis ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+
+#choice_axis li {
+    list-style-type: none;
+}

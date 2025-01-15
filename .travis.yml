@@ -1,0 +1,12 @@
+language: python
+python:
+  - "3.9"
+
+before_install:
+  - chmod +x .src/st.sh
+ 
+install:
+  - pip3 install -r requirements.txt
+script:
+  - cd flaskapp
+  - ./src/st.sh
